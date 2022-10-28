@@ -2,17 +2,64 @@ body {
   padding: 0;
   margin: 0;
 }
-
 #container {
-  display: flex;
-  width: 100vw;
+  background: #ffffff;
+
   height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background: #d0d0d0;
-  flex-direction: column;
 }
 
-#cityname {
-  flex: 1 0 auto;
+.header {
+  background: #102b3f;
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.city-input {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+  background: #efefef;
+  box-sizing: border-box;
+}
+.city-submit {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+
+  box-sizing: border-box;
+}
+.display-area {
+  width: 100vw;
+  height: 75vh;
+
+  box-sizing: border-box;
+  padding: 20px 50px 20px 50px;
+}
+
+.city-name {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.daily-forecast {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: auto;
+  height: 80%;
+}
+
+.today-temp-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
